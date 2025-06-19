@@ -1,0 +1,179 @@
+/* ===================================
+   Import Fonts
+   =================================== */
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v19-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ===================================
+   CSS Variables
+   =================================== */
+
+:root {
+    /* Colors */
+    --primary-400: hsl(75, 94%, 57%);
+
+    --base-100: hsl(0, 0%, 100%);
+    --base-700: hsl(0, 0%, 20%);
+    --base-800: hsl(0, 0%, 12%);
+    --base-900: hsl(0, 0%, 8%);
+
+    /* Typography */
+    --text-body: 400 clamp(10px, 1.2vw, 14px) / 1.4 'Figtree', sans-serif;
+    --text-heading: 700 clamp(18px, 1.4vw, 24px) / 1.1 'Figtree', sans-serif;
+    --text-label: 600 clamp(10px, 1.2vw, 14px) / 1 'Figtree Bold', sans-serif;
+
+    /* Spacing */
+    --space-s: clamp(10px, 1vw, 12px);   /* Base ~16px */
+    --space-m: clamp(20px, 1.5vw, 24px); /* Base ~24px */
+    --space-l: clamp(24px, 2vw, 32px);   /* Base ~40px */
+
+    /* Border Radius */
+    --radius-m: 0.25rem;
+
+    /* Box Shadow */
+    --box-shadow-200: 0px 10px 10px rgba(0, 0, 0, 0.1); 
+
+    /* Transitions */
+    --transition-regular: all 0.2s ease-in-out;
+}
+
+/* ===================================
+   Global Styles
+   =================================== */
+
+body {
+    font: var(--text-body);
+    background-color: var(--base-900);
+    color: var(--base-100);
+}
+
+h1, h2, h3, h4, h5 {
+    font: var(--text-heading);
+}
+
+.section {
+    width: 100%;
+    height: 100dvh;
+}
+
+.container {
+    padding: 0 var(--space-m);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ===================================
+   Utility Classes
+   =================================== */
+
+.grid {
+    display: grid;
+}
+
+.grid-place-items-center {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+.grid-flow--s {
+    display: grid;
+    gap: var(--space-s);
+}
+
+.grid-flow--m {
+    display: grid;
+    gap: var(--space-m);
+}
+
+.grid-flow--l {
+    display: grid;
+    gap: var(--space-l);
+}
+
+.text-label {
+    font: var(--text-label);
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.color-primary-400 {
+    color: var(--primary-400);
+}
+
+.radius-m {
+    border-radius: var(--radius-m);
+}
+
+/* ===================================
+   CSS Components
+   =================================== */
+
+.profile-card {
+    width: 18rem;
+    text-align: center;
+    background-color: var(--base-800);
+    padding: var(--space-l);
+}
+
+.profile-card__pic-wrapper {
+    max-width: 82px;
+}
+
+.profile-card__pic {
+    border-radius: 100%;
+}
+
+.profile-card__title {
+    padding-bottom: calc(var(--space-s) * 0.5);
+}
+
+.profile-card__link {
+    display: block;
+    text-decoration: none;
+    padding: var(--space-s);
+    background-color: var(--base-700);
+    border-radius: var(--radius-m);
+    color: var(--base-100);
+    transition: var(--transition-regular);
+}
+
+.profile-card__link:hover,
+.profile-card__link:focus-visible {
+    color: var(--base-900);
+    background-color: var(--primary-400);
+}
+
+
+
+
+
