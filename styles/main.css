@@ -48,10 +48,11 @@
     /* Spacing */
     --space-s: clamp(10px, 1vw, 12px);   /* Base ~16px */
     --space-m: clamp(20px, 1.5vw, 24px); /* Base ~24px */
-    --space-l: clamp(24px, 2vw, 32px);   /* Base ~40px */
+    --space-l: clamp(32px, 2vw, 42px);   /* Base ~40px */
 
     /* Border Radius */
-    --radius-m: 0.25rem;
+    --radius-s: 0.25rem;
+    --radius-m: 0.55rem;
 
     /* Box Shadow */
     --box-shadow-200: 0px 10px 10px rgba(0, 0, 0, 0.1); 
@@ -162,7 +163,7 @@ h1, h2, h3, h4, h5 {
     text-decoration: none;
     padding: var(--space-s);
     background-color: var(--base-700);
-    border-radius: var(--radius-m);
+    border-radius: var(--radius-s);
     color: var(--base-100);
     transition: var(--transition-regular);
 }
