@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - GitHub Solution URL: [Add solution URL here](https://github.com/JakeH42/social-links-profile-main)
-- Live Site URL (Vercel): [Add live site URL here](https://blog-preview-card-main-omega-ochre.vercel.app/)
+- Live Site URL (Vercel): [Add live site URL here](https://social-links-profile-main-psi-one.vercel.app/)
 
 ## My process
 
@@ -47,12 +47,11 @@ Users should be able to:
 
 ### What I learned
 
-That pixel perfect solutions ar not neccesary
+Getting better and knowing when to use utility classes instead of component styles
 
 ### Continued development
 
-I need to brush up on scalability using CSS - I think I need to be utilising more utility classes but not sure.
-
+I feel I did quite well considering I had no figma file to use. Will learn more about clamp() in CSS for dynamic spacing and dynamically sized fonts.
 
 ## Author
 
